@@ -23,7 +23,7 @@ function numgenetator() {
    
         
     if (currentmoney >= 100) {
-        currentmoney -= 100
+        currentmoney -= 500
         userbet = document.getElementById("userNumber").value
         numgenetatores = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
         console.log(numgenetatores);
@@ -36,7 +36,7 @@ function numgenetator() {
             document.getElementById("moneyDisplay").innerText = currentmoney;
         }
         else {
-            alert("Lo siento, perdiste $100 xdddddd Tu numero era " + numgenetatores + " y apostaste al " + userbet + ". Tu dinero actual es: $" + currentmoney);
+            alert("Lo siento, perdiste $500 xdddddd Tu numero era " + numgenetatores + " y apostaste al " + userbet + ". Tu dinero actual es: $" + currentmoney);
             
             document.getElementById("moneyDisplay").innerText = currentmoney;
         }
